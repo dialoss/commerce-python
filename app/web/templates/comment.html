@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Письмо</title>
+</head>
+<body>
+    <p>Комментарий на странице {{ context.page }}</p>
+    <p>Отправитель: <strong>{{ context.user.name }} | {{ context.user.email }}</strong></p>
+    <p>Текст: {{ context.message |safe }}</p>
+    <p><a href="{{ context.link }}">Ответить на странице</a></p>
+</body>
+</html>
